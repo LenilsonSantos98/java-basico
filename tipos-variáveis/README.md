@@ -1,18 +1,12 @@
-## Getting Started
+## Tipos de dados:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+public class TipoDados {
+	public static void main(String[] args) {
+		byte idade = 123;
+		short ano = 2021;
+		int cep = 21070333; // se começar com zero, talvez tenha que ser outro tipo
+		long cpf = 98765432109L; // se começar com zero, talvez tenha que ser outro tipo
+		float pi = 3.14F;
+		double salario = 1275.33;
+	}
+}
