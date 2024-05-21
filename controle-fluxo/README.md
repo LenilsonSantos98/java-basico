@@ -116,3 +116,59 @@ public class PlanoOperadora {
         }
 			
             Nesse código foi definido cada case em ordem decresceente, e não foi utilizado o break, para que o plano superior inclua o beneficio do inferior.
+
+## Estrururas de repetição:
+## ExemploFor.java:
+
+Entendendo a estrutura de repetição 'for' em seu escopo temos for(bloco de inicialização; expressão booleana de validação; bloco de atualização).
+
+## ExemploJavaArrays.java
+
+Entendedo o uso do for em Arrays, em um array o indice ddos elementos sempre se inicia em 0.
+for (int x=0; x < alunos.length; x++){
+            System.out.println("O aluno no indice x= " + x + " é " + alunos [x]);
+        }
+
+outra forma de iterar entre os elementos de um array é :
+
+    for (aluno : alunos){
+        System.out.println(alunos);
+    }
+
+## Break Continue ExemploBreakContinue.java
+
+No código: for ( int numero = 1; numero <= 5; numero ++) {
+    if (numero == 3)
+        break;
+    System.out.println(numero);    
+}
+Foi adicionado o break na condicional if, logo ao iterar ele encerrará no valor  2.
+ Se for feita a mudanaça do break para continue, no momento que o valor se igualar a 3, ele pulará para o proximo indice, imprimindo assim os valors 1,2,4,5.
+
+## While (enquanto):
+//estrutura do controle de fluxo while
+
+while (expressão booleana de validação)
+{
+     // comando que será executado até que a 
+     // expressão de validação torne-se falsa 
+}
+
+ ## ExemploWhile.java
+  traabalhamos a estrutura de repetição while, importamos uma classe localthreadrandon para gerar valores aleatórios, e enquanto a condição era verdadeira, o jãozinho continuava a comprar doces.
+
+## Do while - (Faça enquanto):
+Testa a condição após executar o código.
+//estrutura do controle de fluxo do while
+
+do
+{
+    // comando que será executado até que a 
+     // expressão de validação torne-se falsa 
+}
+while (expressão booleana de validação);
+
+## ExemploDoWhile.java
+
+Importei a classe rando para gerar um valor aleatório no qual determinei entre 1 e 3.
+João vai fazer uma ligacção enquanto o valor correspondente ao ato de atender o telefone não for correspondente, imprimirá no terminal que ainda está discando.
