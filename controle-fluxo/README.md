@@ -172,3 +172,43 @@ while (expressão booleana de validação);
 
 Importei a classe rando para gerar um valor aleatório no qual determinei entre 1 e 3.
 João vai fazer uma ligacção enquanto o valor correspondente ao ato de atender o telefone não for correspondente, imprimirá no terminal que ainda está discando.
+
+## AboutMe.java (Try/Catch)
+Tratamento de exceções (try/catch).
+
+Nesse código que pede as informações do usuário, se no campo de idade por exemplo, que espera um dado do tipo INT, e o usuario digitar 'onze' haverá uma exceção :Exception in thread "main" java.util.InputMismatchException;
+
+após o erro eu uso o try{'código aqui'} e dentro dele o código a ser executado, e em baixo uso o catch('exceção aqui + a variável que determinei){SysOut aqui com a mensagem de erro.} nesse caso, dentro dos '()' A exceção é: InputMismatchException. 
+
+Agora ao executar o programa, ao ser inserido um tipo de dade String em um campo INT, será exibido :Os campos de idade e altura precisam ser numericos.
+
+## Tratamento de exceções
+
+E quando inevitavelmente, ocorrer uma exceção? Como nós desenvolvedores podemos ajustar o nosso algoritmo para amenizar o ocorrido?
+
+A instrução 
+try
+, permite que você defina um bloco de código, para ser testado quanto a erros enquanto está sendo executado.
+
+A instrução 
+catch
+, permite definir um bloco de código a ser executado, caso ocorra um erro no bloco try.
+
+A instrução 
+finally
+, permite definir um bloco de código a ser executado, independente de ocorrer um erro ou não. As palavras-chave try e catch vem em pares.
+Estrutura de um bloco com try e catch:
+
+try {
+  //  bloco de código conforme esperado
+}
+catch(Exception e) {// precisamos saber qual exceção
+  // bloco de código que captura as exceções que podem acontecer
+  // em caso de um fluxo não previsto
+}
+
+## CepInvalidoException.java e FormatadorCepExemplo.java
+
+Para uma regra de negócio é possivel tentar prever uma exceção, nesse caso imaginamos que o cep seja um campo obrigatório e desejamos já fazer o tratamento de um possivel erro. Então foi criada a classe CepInvalidoException.java que tem como extends Exception.
+Ela sera chamada na classe FormatadorCepExemplo.java, na qual está com o metodo main que será a porta de entrada do programa.
+ Insiro o metodo try/catch para fazer o tratamento da exceção e determino o retorno esperado.
